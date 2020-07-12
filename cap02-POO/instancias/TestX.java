@@ -1,0 +1,14 @@
+package libro.cap02.instancias;
+
+public class TestX {
+
+	public static void main(String[] args) 
+	{
+		X x1 = new  X (5,4);
+		X x2 = new X (2,7);
+		
+		System.out.print("x1= "+x1+"\nx2= "+x2);
+		
+	}
+
+}
