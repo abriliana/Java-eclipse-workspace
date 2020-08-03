@@ -12,9 +12,9 @@ public class ConexionJavaHSQLDB {
         String url = "jdbc:hsqldb:hsql://localhost/";
         String user = "SA";
         String password = "";
-        					//Para ingresar a un catalogo dhttps://marketplace.eclipse.org/content/hsqldb-database-server-plugine tipo file tenemos que obtener la conexión de esta manera:
+        					
         try (Connection con = DriverManager.getConnection(url, user, password)) {
-            				//si estaba creado obtiene la conexión a ese catalogo y si no simplemente lo crea
+            				//si estaba creado obtiene la conexiÃ³n a ese catalogo y si no simplemente lo crea
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT * FROM Customer");
             
